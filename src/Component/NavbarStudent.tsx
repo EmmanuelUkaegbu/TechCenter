@@ -28,7 +28,7 @@ const NavbarStudent = () => {
         <div className="flex justify-between items-center h-16 sm:h-16 md:h-20 flex-nowrap">
           {/* Logo */}
           <div className="flex-shrink-0 cursor-pointer">
-            <Link to="/home">
+            <Link to="/">
               <img
                 src={logoo}
                 alt="Logo"
@@ -40,7 +40,7 @@ const NavbarStudent = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center whitespace-nowrap md:gap-0 lg:gap-2 xl:gap-4">
             <Link
-              to="/home"
+              to="/"
               className="px-2 lg:px-4 py-2 text-white font-medium text-sm lg:text-base"
             >
               <span className="transition-all duration-300 hover:text-amber-400">
@@ -116,7 +116,7 @@ const NavbarStudent = () => {
           <div className="md:hidden w-full overflow-hidden">
             <div className="pb-4">
               <Link
-                to="/home"
+                to="/"
                 onClick={closeMenu}
                 className="block px-4 py-3 text-white font-medium rounded-lg hover:text-amber-400 transition-all duration-300"
                 style={{ animation: "slideIn 0.3s both" }}
