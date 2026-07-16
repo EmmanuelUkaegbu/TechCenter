@@ -12,7 +12,7 @@ interface RegisterForm {
   email: string;
   userName: string;
   phoneNumber: string;
-  age: number;
+  age: number | "";
   country: string;
   gender: string;
   address: string;
@@ -27,7 +27,7 @@ const Register: React.FC = () => {
     email: "",
     userName: "",
     phoneNumber: "",
-    age: 0,
+    age: "",
     country: "",
     gender: "",
     address: "",
@@ -44,7 +44,7 @@ const Register: React.FC = () => {
 
     setFormData((prev) => ({
       ...prev,
-      [name]: name === "age" ? Number(value) : value,
+      [name]: name === "age" ? (value === "" ? "" : Number(value)) : value,
     }));
   };
 
