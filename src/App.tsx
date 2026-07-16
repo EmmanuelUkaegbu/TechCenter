@@ -11,9 +11,11 @@ import Contact from "./Pages/Contact";
 import RegisterCourse from "./Pages/RegisterCourses";
 import Admin from "./Pages/Admin";
 import AdminRoute from "./Component/AdminRoute";
+import Scrolltop from "./Component/Scrolltop";
 function App() {
   return (
     <div>
+      <Scrolltop />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
