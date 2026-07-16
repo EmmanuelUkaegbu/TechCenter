@@ -255,24 +255,19 @@ const Student = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {[
-                    "Frontend Web Development",
-                    "Backend Development",
-                    "UI/UX Design",
-                    "Python Programming",
-                    "Mobile App Development",
-                    "Database Management",
-                  ].map((course) => (
-                    <div
-                      key={course}
-                      className="bg-amber-600 rounded-xl p-4 hover:bg-amber-500 transition"
-                    >
-                      <div className="flex items-center gap-3">
-                        <FaBookOpen className="text-slate-900 text-lg" />
-                        <span className="font-medium">{course}</span>
+                  {["Frontend Web Development", "Backend Development"].map(
+                    (course) => (
+                      <div
+                        key={course}
+                        className="bg-amber-600 rounded-xl p-4 hover:bg-amber-500 transition"
+                      >
+                        <div className="flex items-center gap-3">
+                          <FaBookOpen className="text-slate-900 text-lg" />
+                          <span className="font-medium">{course}</span>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ),
+                  )}
                 </div>
               </div>
 
